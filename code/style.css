@@ -1,0 +1,329 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d9c8e9;;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #4a3f6b;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 18px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Section General *//* Background section */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+ /* ungu muda */
+}
+
+/* Judul section */
+.section-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+   
+}
+
+/* Kotak putih tengah */
+.content-box {
+    background: #EDE7F6;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Teks di dalam kotak rata tengah */
+.center-text p {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Garis horizontal dekoratif */
+.divider {
+    border: none;
+    width:65%;
+    height: 2px;
+    background: #4a3f6b;
+     margin: 0 auto 0 auto;
+}
+
+/* argumentasi */
+
+/* Section background */
+.section {
+    padding: 40px 20px;
+}
+
+/* Wrapper untuk kotak + garis */
+.info-wrapper {
+    max-width: 700px;
+  margin: 20px auto 10px auto; 
+    position: relative;
+}
+
+/* Posisi wrapper agak kiri */
+.info-wrapper.left {
+    margin-left: 80px;
+    margin-right: auto;
+}
+
+/* Posisi wrapper agak kanan */
+.info-wrapper.right {
+    margin-right: 80px;
+    margin-left: auto;
+}
+
+/* Kotak utama */
+.info-box {
+    background: #FEEBF6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Judul kotak */
+.info-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+/* Isi kotak: teks + gambar */
+.info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+/* Membalik urutan untuk bagian kedua */
+.info-content.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Teks */
+.info-content p {
+    flex: 2;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Gambar */
+.info-content img {
+    flex: 1;
+    max-width: 120px;
+    height: auto;
+}
+
+/* Garis di luar kotak */
+.box-divider {
+    height: 2px;
+    background: #4a3f6b;
+    border-radius: 2px;
+   margin: 20px auto 10px auto; 
+    width: 100%; /* Panjangnya mengikuti wrapper */
+}
+
+/* Container Poster */
+#poster {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#poster h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Grid Poster */
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 kolom */
+  column-gap: 50px; /* jarak antar kolom lebih rapat */
+  row-gap: 15px; /* jarak antar baris */
+  justify-content: center; /* grid di tengah */
+  align-items: center;
+  max-width: 880px; /* batasi lebar grid agar poster rapat */
+  margin: 0 auto; /* posisikan grid ke tengah */
+}
+
+/* Gambar Poster */
+.poster-item img {
+  width: 250px; /* perbesar ukuran poster */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.poster-item img:hover {
+  transform: scale(1.05); /* efek zoom saat hover */
+}
+
+/* Garis bawah */
+#poster::after {
+  content: "";
+  display: block;
+  width: 93.5%;
+  height: 2px;
+  background-color: #3d2a5a;
+  margin: 20px auto 0 auto;
+}
+
+
+/* Background halaman */
+body {
+    background-color: #d8c8e4; /* Warna ungu muda */
+    margin: 0;
+    padding: 0;
+}
+
+/* Bagian argumentasi */
+.argumentasi-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Judul */
+.argumentasi-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Kotak isi argumentasi tanpa background */
+/* Kotak untuk teks argumentasi */
+.argumentasi-box {
+    background-color: #5a437a; /* Warna ungu tua */
+    color: white; /* Warna teks */
+    border-radius: 10px; /* Sudut kotak membulat */
+    padding: 20px; /* 🌟 Tambahkan padding agar teks tidak mepet */
+    max-width: 800px; /* 🌟 Perbesar ukuran kotak (default 600px) */
+    margin: 0 auto; /* Tengah secara horizontal */
+    text-align: center; /* Teks di dalam kotak rata tengah */
+    font-size: 18px; /* 🌟 Perbesar ukuran teks di dalam kotak */
+    line-height: 1.8; /* 🌟 Tambahkan jarak antar baris agar rapi */
+}
+
+
+/* Garis di bawah kotak */
+.argumentasi-line {
+    margin: 15px auto;
+    width: 65%;
+    border: 1px solid #000;
+}
+
+/* Footer teks */
+.argumentasi-footer {
+    max-width: 700px; /* 🌟 Samakan dengan ukuran box argumentasi */
+    margin: 0 auto; /* 🌟 Supaya teks berada di tengah */
+    text-align: center; /* 🌟 Rata tengah teks */
+    font-size: 20px; /* 🌟 Perkecil teks sedikit agar proporsional */
+    line-height: 1.8; /* 🌟 Jarak antar baris */
+    padding: 10px 0; /* Memberikan ruang atas & bawah */
+}
+/*
+
+/* === ⬇️ DITAMBAHKAN UNTUK MENGATUR IKON DI LUAR KOTAK === */
+.icon-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* pastikan ikon berada di atas */
+}
+
+.icon-container img {
+    max-width: 120px; /* ukuran ikon */
+    height: auto;
+}
+
+/* Ikon untuk kotak kiri (Hoaks Ancaman Nyata) */
+.left-icon {
+    right: -120px; /* jarak ikon dari kotak */
+}
+
+/* Ikon untuk kotak kanan (Literasi Digital Bijak Bermedia) */
+.right-icon {
+    left: -90px; /* jarak ikon dari kotak */
+}
+/* === ⬆️ SAMPAI SINI === */
+
+/* === Judul argumentasi di luar kotak === */
+.info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Judul kotak kiri */
+.left-title {
+    text-align: left;      /* rata kiri */
+    margin-left: 0;        /* sejajar dengan kotak kiri */
+}
+
+/* Judul kotak kanan */
+.right-title {
+    text-align: right;     /* rata kanan */
+    margin-right: 0;       /* sejajar dengan kotak kanan */
+}
+
